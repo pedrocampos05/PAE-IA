@@ -11,7 +11,7 @@
 * **Foco atual:** Arquitetura de Software, Inteligência Artificial e Machine Learning.
   
 <figure style="text-align: center;">
-    <img width="500"  alt="qr-code_linkedin" src="https://github.com/user-attachments/assets/548643cf-bc54-4b26-8c69-db266309c5ed" />
+    <img width="350"  alt="qr-code_linkedin" src="https://github.com/user-attachments/assets/548643cf-bc54-4b26-8c69-db266309c5ed" />
 </figure>
 
 ---
