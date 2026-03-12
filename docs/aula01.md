@@ -1,8 +1,21 @@
-# Arquitetura de Sistemas reais com IA
+<div align="center">
+
+
+
+# Arquitetura de sistemas reais com IA 
+### *Introdução!*
+
+<br>
+
+**Slides:**
+`github.com/pedromatumoto/ia-na-pratica`
+
+
+</div>
 
 ---
 
-## Muito Prazer! Quem sou eu?
+## Quem sou eu?
 
 **Pedro Matumoto (ou só Matumoto mesmo)**
 * Engenheiro de Computação recém-formado pelo Instituto Mauá de Tecnologia com minor de Bioengenharia
