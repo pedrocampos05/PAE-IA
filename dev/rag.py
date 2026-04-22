@@ -30,6 +30,8 @@ while True:
     if pergunta.lower() == 'sair':
         break
 
+
+
     # Documentação do ChromaDB: https://docs.trychroma.com/docs/querying-collections/query-and-get
     # ----------------------------------------------------------------
     # TODO 1: BUSCA 
@@ -37,13 +39,13 @@ while True:
     # Use a 'colecao_documentos' para buscar os 2 textos que mais 
     # se aproximam semanticamente da 'pergunta' do usuário.
     
-    # resultados = colecao_documentos.query(...)
+    resultados = colecao_documentos.query(query_texts=[pergunta])
+    n_resultados = 2
+
+    textos_recuperados = resultados['documents'][0]
+    contexto_unido = " ".join(textos_recuperados)
     
-    # textos_recuperados = resultados['documents'][0]
-    # contexto_unido = " ".join(textos_recuperados)
-    
-    # -> Apague esse contexto falso e use a lógica de busca acima:
-    contexto_unido = "CONTEXTO FALSO PARA TESTE." 
+    # -> Apague esse contexto falso e use a lógica de busca acima: 
 
     print(f"\nDocumentos encontrados pelo Banco Vetorial: \n{contexto_unido}\n")
 
@@ -64,15 +66,15 @@ while True:
     # ----------------------------------------------------------------
     # TODO 3: GERAÇÃO
     # ----------------------------------------------------------------
-    # resposta = cliente_ia.chat.completions.create(
-    #     model="gpt-4o-mini", 
-    #     temperature=0.1,
-    #     messages=[
-    #         {"role": "system", "content": prompt_sistema},
-    #         {"role": "user", "content": pergunta}
-    #     ]
-    # )
+    resposta = cliente_ia.chat.completions.create(
+         model="gpt-4o-mini", 
+         temperature=0.2,
+         messages=[
+             {"role": "system", "content": prompt_sistema},
+             {"role": "user", "content": pergunta}
+         ]
+     )
     
-    # print(f"Resposta da IA: {resposta.choices[0].message.content}\n")
+    print(f"Resposta da IA: {resposta.choices[0].message.content}\n")
     
     print("-" * 50)
